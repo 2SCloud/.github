@@ -25,7 +25,6 @@ with open(README_FILE, "w") as f:
         f.write(f"| {lang} | {size} |\n")
     
     f.write("\n## 📦 Popular Repositories\n\n")
-    # On affiche les 5 repos avec le plus de stars
     sorted_repos = sorted(repos, key=lambda x: x['stargazers_count'], reverse=True)
     for repo in sorted_repos[:5]:
         f.write(f"- [{repo['name']}]({repo['html_url']}) - ⭐ {repo['stargazers_count']}\n")
