@@ -1,6 +1,7 @@
-# 🚀 2SCloud
+![svg-logo-2scloud](https://github.com/user-attachments/assets/66e64df0-8144-43d8-aac3-c17bcf4e5245)
+
 <p align="center">
-  <i>A private cloud solution, available on Windows, Linux, MacOS(OSX)</i>
+  <i>A private cloud solution, available on Windows, Linux, macOS</i>.
 </p>
     
 ## 🧠 Top Languages
