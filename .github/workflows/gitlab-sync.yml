@@ -1,0 +1,64 @@
+# Two-way sync between the 2SCloud GitHub repositories and the 2scloud GitLab
+# group: branches, tags, issues, pull/merge requests, comments, and releases
+# (GitHub -> GitLab). See .github/scripts/gitlab_sync.py.
+#
+# Secrets:
+#   GITLAB_TOKEN    GitLab personal access token (api, write_repository)
+#   GH_SYNC_TOKEN   GitHub personal access token (repo, workflow). Its account
+#                   must be allowed to bypass the branch rulesets, or merges
+#                   done on GitLab cannot reach protected GitHub branches.
+name: GitLab sync
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+    inputs:
+      repos:
+        description: "Repositories to sync, space-separated (empty: all)"
+        type: string
+        default: ""
+      since:
+        description: 'Issues/PRs updated since: empty = previous run, "import", "all", or an ISO 8601 date'
+        type: string
+        default: ""
+      dry_run:
+        description: "Dry run: read everything, write nothing"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write # the state is kept on the gitlab-sync-state branch
+  actions: write # keep the schedule enabled
+
+concurrency:
+  group: gitlab-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+        with:
+          persist-credentials: false
+
+      - name: Sync GitHub and GitLab
+        env:
+          GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
+          GH_SYNC_TOKEN: ${{ secrets.GH_SYNC_TOKEN }}
+          STATE_REPO: ${{ github.repository }}
+          STATE_TOKEN: ${{ github.token }}
+          REPOS: ${{ inputs.repos }}
+          SINCE: ${{ inputs.since }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: python3 .github/scripts/gitlab_sync.py
+
+      # GitHub disables scheduled workflows of a public repository after 60
+      # days without activity, and this repository rarely changes.
+      - name: Keep the schedule enabled
+        if: github.event_name == 'schedule'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method PUT "repos/${GITHUB_REPOSITORY}/actions/workflows/gitlab-sync.yml/enable"
