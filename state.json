@@ -1,0 +1,202 @@
+{
+ "repos": {
+  "scloud-compute": {
+   "items": {
+    "p6": {
+     "cb": "da39a3ee5e6b4b0d",
+     "draft": false,
+     "labels": [],
+     "ob": "da39a3ee5e6b4b0d",
+     "state": "merged",
+     "target": "main",
+     "title": "Feat/limitrange"
+    },
+    "p7": {
+     "cb": "da39a3ee5e6b4b0d",
+     "draft": false,
+     "labels": [],
+     "ob": "da39a3ee5e6b4b0d",
+     "state": "merged",
+     "target": "main",
+     "title": "Feat/resourcequota"
+    }
+   },
+   "problems": [],
+   "refs": {
+    "refs/heads/feat/deploy-script": "caf231d12332937ac8c6c43a4836b3b172238485",
+    "refs/heads/feat/dns": "c3bfde22bc42234ce0c36cfb6d84a1254739a18e",
+    "refs/heads/feat/doh-dns": "c87f112c7f79994eed6dead1100ffd805a065f00",
+    "refs/heads/feat/doh-manifests": "aafe029f8797b0fa6442f88568d698b4ba183504",
+    "refs/heads/feat/edge-gateway": "bb241d93015f8a897b7a98ebafa88d11a3540ce6",
+    "refs/heads/feat/limitrange": "83e6fc5967d5fb324c4a22692e076014f9cc9452",
+    "refs/heads/feat/network-policy": "4d8eb0320c2d7965b52b941333f67df043158282",
+    "refs/heads/feat/observability": "833136e537f6d87f5f41bcd338bf50c53ab8efe2",
+    "refs/heads/feat/resourcequota": "2c2799452a71c472322858ef9904d1c2a792c6de",
+    "refs/heads/fix/admin-panel": "ca958a18df78946b3a04613e89d622b32ba516bb",
+    "refs/heads/main": "40da8b772a86e4e1a809ce23bfe5ef6c8d71b41f"
+   },
+   "retry": [],
+   "since": {
+    "github": "2026-11-28T07:53:53Z",
+    "gitlab": "2026-11-28T07:53:53Z"
+   }
+  },
+  "scloud-dns": {
+   "items": {
+    "i110": {
+     "cb": "e69d32bbdbdc82af",
+     "draft": false,
+     "labels": [
+      "area: config",
+      "area: logs",
+      "work: M"
+     ],
+     "ob": "da39a3ee5e6b4b0d",
+     "state": "open",
+     "target": "",
+     "title": "[LOGS] - remove live_print option and simply shows consumption of the DNS"
+    }
+   },
+   "problems": [],
+   "refs": {
+    "refs/heads/develop": "39f0d3001d42ba2a6ec11e409544039ccd1a5517",
+    "refs/heads/main": "ca17d26cff226288745d068e4e12c176b23f6421",
+    "refs/heads/rework/refactor-base-code": "de54d5bb7a411f9aafda1550a0a162be433d6b7d",
+    "refs/tags/0.1.0": "b35cb4aa95dae2975adf3c0d8c0c44ff9bd55d3e",
+    "refs/tags/0.1.1": "bf6c5d7260da7c88d9e0d2ba119f93ede70e89b7",
+    "refs/tags/0.1.2": "4df35ec42aad0117ae02d882f48dc4e7740d7df1",
+    "refs/tags/0.1.3": "c34edbe90faf970745230d2a3b6fd2587867ed94",
+    "refs/tags/0.1.4": "ddaea98bea1045f0ce5b3fc216938d1b5d5fc1ef",
+    "refs/tags/0.2.0": "e06482de7b643ace6397b5a04fdfceea4e95366d",
+    "refs/tags/0.2.1": "761145b0b4ba79af63390d06401cd61234c1eac9",
+    "refs/tags/0.2.2": "a0b56885c858433e492476a03a0fd113f23c7acf",
+    "refs/tags/0.2.3": "9c6560fb5ef7f72b46a3d4be1224ef15f65916de",
+    "refs/tags/0.2.4": "ad9effeaa129779dca2a3bc6955f3b01141cf788",
+    "refs/tags/0.3.0": "ad9effeaa129779dca2a3bc6955f3b01141cf788",
+    "refs/tags/0.3.0-1": "4cd3bf20c6d0ab3382dac8ad18327f1f974e8573",
+    "refs/tags/0.3.1": "fdc81a8113138ce36a221ee2e787c936dcea3662",
+    "refs/tags/0.3.1-alpha.1": "5fa11592a160112f8380381878aa107699901208",
+    "refs/tags/0.3.1-alpha.2": "92075fee6f224c0b9a3e3ffc1d250053832c912b",
+    "refs/tags/0.3.1-beta.1": "28336cb1d9202210f61723135b339859aaddb0d3",
+    "refs/tags/0.3.1-beta.2": "eeae9c0215809517721f3ba08e14d0a3fdb98718",
+    "refs/tags/0.3.2": "6ea50048dd966f0d6e1fe90cb4def047ec9d7cd2",
+    "refs/tags/0.3.2-alpha.18": "e22ebcc5e3e4458b89f7b80f996d2d4a9f338895",
+    "refs/tags/0.3.2-alpha.2": "b7efa34221fe0a1145e9474fdd66b739f48e608a",
+    "refs/tags/0.3.2-alpha.21": "3cb6ef7868893ce68e4e97ccffbffff5e203dd78",
+    "refs/tags/0.3.2-beta.1": "316ba8ec10cba68ac1e956d3d2f9373c1fdc8451",
+    "refs/tags/0.3.2-beta.19": "78ac905a72f8a0beedf175f713386a5e8bcbffe7",
+    "refs/tags/0.3.2-beta.22": "9cd0882f6da7fc803b578779d96cd0e1b529174a"
+   },
+   "retry": [],
+   "since": {
+    "github": "2026-11-28T07:53:58Z",
+    "gitlab": "2026-11-28T07:53:58Z"
+   }
+  },
+  "scloud-edge-gateway": {
+   "items": {},
+   "problems": [],
+   "refs": {
+    "refs/heads/develop": "499312219527edc6eb0a2c6041d98360af059ec6",
+    "refs/heads/main": "f0e273991d03f37a4d21fd71f315bacd8bdb08de",
+    "refs/tags/0.1.0": "7923a08e6f4c614446e9a8b32b56b0203f9ef903",
+    "refs/tags/0.1.1": "85e80cc294feac51a490ed570f79df066e87fee2",
+    "refs/tags/0.1.2": "f9b06a1935da8d7571b37c9081005c18d2dda9ce",
+    "refs/tags/0.2.0": "e9cd71477468cff05b95fcf6f719bccaa74c8c21",
+    "refs/tags/0.2.0-alpha.1": "94cc70fff5c76887e0c7e09dce7b0c039cf38bc5",
+    "refs/tags/0.2.0-alpha.4": "9012400cdd575307b50541541cdc16e1abb3c118",
+    "refs/tags/0.2.0-beta.1": "f203ae46f673a2b5027f94c798f7e00b8ef0adf6",
+    "refs/tags/0.2.0-beta.5": "04381bb306e85e80e7365f94245f15659291ad7b"
+   },
+   "since": {
+    "github": "2026-11-28T07:54:05Z",
+    "gitlab": "2026-11-28T07:54:05Z"
+   }
+  },
+  "scloud-eg-firewall": {
+   "items": {},
+   "problems": [],
+   "refs": {
+    "refs/heads/main": "f0f1f40606e9782fa383313c4f6576558a3639e9"
+   },
+   "since": {
+    "github": "2026-11-28T07:54:12Z",
+    "gitlab": "2026-11-28T07:54:12Z"
+   }
+  },
+  "scloud-eg-frontend": {
+   "items": {},
+   "problems": [],
+   "refs": {
+    "refs/heads/feat/admin-frontend-auth": "d51b49c2a4c34a7f0412a0de410326ed1893ff51",
+    "refs/heads/feat/navbar": "efc46f593eae36e4566d701de151a919d4de0470",
+    "refs/heads/fix/config-pages": "1ac4302cf796f5052618465dea015fce8341661f",
+    "refs/heads/main": "ac484da5492229e85f1537acfec3caefbf325524"
+   },
+   "since": {
+    "github": "2026-11-28T07:54:17Z",
+    "gitlab": "2026-11-28T07:54:17Z"
+   }
+  },
+  "scloud-eg-rate-limit": {
+   "items": {},
+   "problems": [],
+   "refs": {
+    "refs/heads/feat/config-hot-reload": "3ca2f143d06110034efd396239448e853b602c09",
+    "refs/heads/feat/structs-for-rate-limit": "6785a566dcd4ed4bb425e95b19f849b04a7fd20c",
+    "refs/heads/main": "af559e416c9657b13ab7c5b0712498cd3c41b276",
+    "refs/tags/0.1.0": "491444c1cb8eef2b88bcf58ff4309835da670181",
+    "refs/tags/0.2.0": "856f371b07947693bf0560d8cdb7919358e89403"
+   },
+   "since": {
+    "github": "2026-11-28T07:54:24Z",
+    "gitlab": "2026-11-28T07:54:24Z"
+   }
+  },
+  "scloud-eg-waf": {
+   "items": {},
+   "problems": [],
+   "refs": {
+    "refs/heads/ci": "ff8c8a1d61f810ad1d60b6c4797c6109348c8de9",
+    "refs/heads/feat/apply-rules": "2364ff8901923bd3ecef512f5f90d3c98ceeb68a",
+    "refs/heads/main": "5e3e3cd7be2f191d0f6ffb7b5bdce922b7c22f08",
+    "refs/tags/1.0.0": "1e685022e280505256dfb9cd035c2afccf341212",
+    "refs/tags/1.1.0": "73919e9dccbde59b38d806825849343df42babeb"
+   },
+   "since": {
+    "github": "2026-11-28T07:54:30Z",
+    "gitlab": "2026-11-28T07:54:30Z"
+   }
+  },
+  "scloud-install": {
+   "items": {},
+   "problems": [],
+   "refs": {
+    "refs/heads/bot/stack-beta/scloud-dns": "b025be644d3417ee95894b08efd439bdfb38bcab",
+    "refs/heads/bot/stack/scloud-dns": "4feb6fc282825a4d756cc533b7ccbd9023151e16",
+    "refs/heads/feat/stack-versions": "2e2d5fb4648a448237067da53bedec77038abf37",
+    "refs/heads/main": "9fd5c0e3ff681725f9506d9a0d56e266fe5d5197"
+   },
+   "since": {
+    "github": "2026-11-28T07:54:36Z",
+    "gitlab": "2026-11-28T07:54:36Z"
+   }
+  },
+  "scloud-observability": {
+   "items": {},
+   "problems": [],
+   "refs": {
+    "refs/heads/main": "ba0c378a088711d89220f92afd51d9a997e83a73",
+    "refs/tags/0.1.0": "85a561effcf2f39ffcf22202cb11c3a6456f385a",
+    "refs/tags/0.1.1": "10cc28fee828a4d173f15dd757a3169073f23c0f",
+    "refs/tags/0.1.1.1": "fc1218710f1d8b686f40357f484895d0a563a617",
+    "refs/tags/0.1.1.2": "45bc04842d6c3ce08f27fef7bba96fee0cc69a49",
+    "refs/tags/0.1.1.3": "d85c9b40fc9aeb6fa29e9077e1507f5b645ed5d0"
+   },
+   "since": {
+    "github": "2026-11-28T07:54:42Z",
+    "gitlab": "2026-11-28T07:54:42Z"
+   }
+  }
+ }
+}
